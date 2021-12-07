@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="Feladatok nyilvántartása" Height="450" Width="550">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" Height="169" Margin="10,41,0,0" VerticalAlignment="Top" Width="344"/>
-        <ListBox HorizontalAlignment="Left" Height="153" Margin="10,256,0,0" VerticalAlignment="Top" Width="344"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="362,41,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="116"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="362,62,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="362,87,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="362,112,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="362,256,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="362,281,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="494,383,0,0" VerticalAlignment="Top"/>
+        <Label Content="Feladatok listája" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="elemekListaja" HorizontalAlignment="Left" Height="169" Margin="10,41,0,0" VerticalAlignment="Top" Width="344"/>
+        <ListBox x:Name="toroltElemLista" HorizontalAlignment="Left" Height="153" Margin="10,256,0,0" VerticalAlignment="Top" Width="344"/>
+        <Label Content="Törölt elemek" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top"/>
+        <Label Content="Feladat szövege:" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="feladatHozzaadas" Content="Új hozzáadása" HorizontalAlignment="Left" Margin="362,62,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="feladatModositas" Content="Kijelölt feladat módosítása" HorizontalAlignment="Left" Margin="362,87,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="feladatTorles" Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Margin="362,112,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="feladatVisszaalitas" Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="362,256,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="feladatVeglegTorlese" Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Margin="362,281,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Erdélyi Péter @ 2021" HorizontalAlignment="Left" Margin="421,383,0,0" VerticalAlignment="Top" Width="121"/>
+        <TextBox x:Name="feladatNeve" HorizontalAlignment="Left" Height="23" Margin="362,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
