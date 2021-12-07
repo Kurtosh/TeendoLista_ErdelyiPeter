@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeendoLista_ErdelyiPeter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Feladatok nyilvántartása" Height="450" Width="550">
     <Grid>
-        
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="169" Margin="10,41,0,0" VerticalAlignment="Top" Width="344"/>
+        <ListBox HorizontalAlignment="Left" Height="153" Margin="10,256,0,0" VerticalAlignment="Top" Width="344"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="362,41,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="116"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="362,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="362,87,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="362,112,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="362,256,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="362,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="494,383,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
