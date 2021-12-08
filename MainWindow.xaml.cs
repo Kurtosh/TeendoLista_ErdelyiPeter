@@ -24,5 +24,11 @@ namespace TeendoLista_ErdelyiPeter
         {
             InitializeComponent();
         }
+
+        private void feladatHozzaadas_Click(object sender, RoutedEventArgs e)
+        {
+            elemekListaja.Items.Add(new CheckBox() {Content = feladatNeve.Text });
+            
+        }
     }
 }

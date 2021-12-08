@@ -12,7 +12,7 @@
         <ListBox x:Name="toroltElemLista" HorizontalAlignment="Left" Height="153" Margin="10,256,0,0" VerticalAlignment="Top" Width="344"/>
         <Label Content="Törölt elemek" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top"/>
         <Label Content="Feladat szövege:" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="feladatHozzaadas" Content="Új hozzáadása" HorizontalAlignment="Left" Margin="362,62,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="feladatHozzaadas" Content="Új hozzáadása" HorizontalAlignment="Left" Margin="362,62,0,0" VerticalAlignment="Top" Width="170" Click="feladatHozzaadas_Click"/>
         <Button x:Name="feladatModositas" Content="Kijelölt feladat módosítása" HorizontalAlignment="Left" Margin="362,87,0,0" VerticalAlignment="Top" Width="170"/>
         <Button x:Name="feladatTorles" Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Margin="362,112,0,0" VerticalAlignment="Top" Width="170"/>
         <Button x:Name="feladatVisszaalitas" Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="362,256,0,0" VerticalAlignment="Top" Width="170"/>
