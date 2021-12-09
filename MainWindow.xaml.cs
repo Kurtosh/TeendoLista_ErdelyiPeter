@@ -38,5 +38,18 @@ namespace TeendoLista_ErdelyiPeter
             elemekListaja.Items.Insert(index, new CheckBox() { Content = feladatNeve.Text });
 
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void feladatTorles_Click(object sender, RoutedEventArgs e)
+        {
+            int index = elemekListaja.SelectedIndex;
+            string szoveg = ((CheckBox)elemekListaja.SelectedItem).Content.ToString();
+            elemekListaja.Items.RemoveAt(index);
+            toroltElemLista.Items.Add(new CheckBox() { Content = szoveg });
+        }
     }
 }
