@@ -23,7 +23,7 @@
         <Button x:Name="feladatVisszaalitas" Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="175,256,0,0" VerticalAlignment="Top" Width="170" Grid.Column="2" Click="feladatVisszaalitas_Click"/>
         <Button x:Name="feladatVeglegTorlese" Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Margin="175,281,0,0" VerticalAlignment="Top" Width="170" Grid.Column="2" Click="feladatVeglegTorlese_Click"/>
         <Label Content="Erdélyi Péter @ 2021" HorizontalAlignment="Left" Margin="224,383,0,0" VerticalAlignment="Top" Width="121" Grid.Column="2"/>
-        <TextBox x:Name="feladatNeve" HorizontalAlignment="Left" Height="23" Margin="175,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="feladatNeve" HorizontalAlignment="Left" Height="23" Margin="175,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Grid.Column="2"/>
 
     </Grid>
 </Window>

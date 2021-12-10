@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +24,36 @@ namespace TeendoLista_ErdelyiPeter
         public MainWindow()
         {
             InitializeComponent();
+            //listaElemekBetoltese();
+            //toroltElemekBetoltese();
         }
+
+       /* private void toroltElemekBetoltese()
+        {
+            string eleresiUt2 = @"D:\GitHubP1\TeendoLista_ErdelyiPeter\bin\Debug\torolt.txt";
+            if (File.Exists(eleresiUt2))
+            {
+                var be = File.ReadAllLines("torolt.txt");
+                elemekListaja.ItemsSource = be;
+            }
+            
+        }
+
+        private void listaElemekBetoltese()
+        {
+            string eleresiUt = @"D:\GitHubP1\TeendoLista_ErdelyiPeter\bin\Debug\meglevo.txt";
+            if (File.Exists(eleresiUt))
+            {
+                var be = File.ReadAllLines("meglevo.txt");
+                elemekListaja.ItemsSource = be;
+            }
+            
+        }*/
 
         private void feladatHozzaadas_Click(object sender, RoutedEventArgs e)
         {
             elemekListaja.Items.Add(new CheckBox() {Content = feladatNeve.Text });
+
             
         }
 
@@ -41,7 +67,7 @@ namespace TeendoLista_ErdelyiPeter
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void feladatTorles_Click(object sender, RoutedEventArgs e)
@@ -65,5 +91,25 @@ namespace TeendoLista_ErdelyiPeter
             int index = toroltElemLista.SelectedIndex;
             toroltElemLista.Items.RemoveAt(index);
         }
+
+       /* private void Window_Closed(object sender, EventArgs e)
+        {
+            string eleresiUt = @"D:\GitHubP1\TeendoLista_ErdelyiPeter\bin\Debug\meglevo.txt";
+                List<string> listaElemek = new List<string>();
+                string[] elemLista = elemekListaja.Items.OfType<string>().ToArray();
+                for (int i = 0; i < elemLista.Length; i++)
+                {
+                listaElemek[i] = elemLista[i];
+                }
+                File.WriteAllLines(eleresiUt, listaElemek);
+            string eleresiUt2 = @"D:\GitHubP1\TeendoLista_ErdelyiPeter\bin\Debug\torolt.txt";
+                List<string> toroltElemek = new List<string>();
+            string[] toroltLista = toroltElemLista.Items.OfType<string>().ToArray();
+            for (int i = 0; i < toroltLista.Length; i++)
+                {
+                    toroltElemek[i] = toroltLista[i];
+                }
+                File.WriteAllLines(eleresiUt2, toroltElemek);
+        }*/
     }
 }
